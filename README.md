@@ -1,6 +1,6 @@
 # homebrew-tap
 
-This is a [Kowainik](https://kowainik.github.io/)'s Homebrew Tap (third-party repositories). 
+This is a [Kowainik](https://kowainik.github.io/)'s Homebrew Tap (third-party repositories).
 It contains Formulae of [kowainik](https://github.com/kowainik) applications.
 
 ## How to use
@@ -23,3 +23,4 @@ brew install NAME
 Here is the list of the available tools with this tap:
 
  * [hit-on](https://github.com/kowainik/hit-on)
+ * [life-sync](https://github.com/kowainik/life-sync)
