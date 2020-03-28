@@ -22,5 +22,9 @@ brew install NAME
 
 Here is the list of the available tools with this tap:
 
- * [hit-on](https://github.com/kowainik/hit-on)
- * [life-sync](https://github.com/kowainik/life-sync)
+| Name           | Installed binary | Project Link                                                | Description                                                                                    |
+| -------------- | ---------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `summoner-tui` | `summon`         | [kowainik/summoner](https://github.com/kowainik/summoner)   | TUI Tool for scaffolding fully configured batteries-included production-level Haskell projects |
+| `summoner-cli` | `summon`         | [kowainik/summoner](https://github.com/kowainik/summoner)   | CLI Tool for scaffolding fully configured batteries-included production-level Haskell projects |
+| `hit-on`       | `hit`            | [kowainik/hit-on](https://github.com/kowainik/hit-on)       | Kowainik Git Workflow Helper Tool                                                              |
+| `life-sync`    | `life`           | [kowainik/life-sync](https://github.com/kowainik/life-sync) | 🔄 Synchronize personal configs across multiple machines                                       |
