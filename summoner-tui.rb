@@ -1,8 +1,8 @@
 class SummonerTui < Formula
   desc "TUI Tool for scaffolding batteries-included Haskell projects"
   homepage "https://kowainik.github.io/projects/summoner"
-  url "https://github.com/kowainik/summoner/releases/download/v2.0.0.0/summon-tui-osx"
-  sha256 "0a264c29e142fc1bbc8b9be37aac10f896bb254558b42dc4c87c4535a4013146"
+  url "https://github.com/kowainik/summoner/releases/download/v2.0.1.1/summon-tui-osx"
+  sha256 "442f1e9f84c69f3b6c5bc98dc7bc8a8a8550cdb8196f556c348144ba1762f897"
 
   bottle :unneeded
   depends_on "hub"
