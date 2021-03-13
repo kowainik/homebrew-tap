@@ -5,6 +5,7 @@ class SummonerCli < Formula
   sha256 "cb18dda777d3b246c5952b62f1a4ed051804d00bfae7ebd2ffc251dea117075f"
 
   bottle :unneeded
+  depends_on "git"
   depends_on "hub"
   conflicts_with "summoner-tui", :because => "because both install 'summon' binaries"
 
