@@ -4,7 +4,6 @@ class LifeSync < Formula
   url "https://github.com/kowainik/life-sync/releases/download/v1.1.0.0/life-osx"
   sha256 "8ab6b552b6c09463c614b01b3cfeab74b24d79b484fbdfdd93f735f8f7ab543e"
 
-  bottle :unneeded
   depends_on "hub"
 
   def install
