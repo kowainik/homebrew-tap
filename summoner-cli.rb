@@ -1,16 +1,15 @@
 class SummonerCli < Formula
   desc "CLI Tool for scaffolding batteries-included Haskell projects"
   homepage "https://kowainik.github.io/projects/summoner"
-  url "https://github.com/kowainik/summoner/releases/download/v2.0.0.0/summon-cli-osx"
-  sha256 "8f9b5e51e4365c2d0de05a51ec6e3a03351e9daff5b5e39dd0634b7ba646c04d"
+  url "https://github.com/kowainik/summoner/releases/download/v2.2.0.0/summon-cli-macos-arm64"
+  sha256 "ac687412d4a51d403df514ed581d72982c7bc924710e73db6a946d8345cee6e3"
 
-  bottle :unneeded
-  depends_on "hub"
+  depends_on "gh"
   conflicts_with "summoner-tui", :because => "because both install 'summon' binaries"
 
   def install
-    bin.install "summon-cli-osx"
-    mv "#{bin}/summon-cli-osx", "#{bin}/summon"
+    odie "This formula currently supports only Apple Silicon (arm64) macOS" unless Hardware::CPU.arm?
+    bin.install "summon-cli-macos-arm64" => "summon"
   end
 
   test do

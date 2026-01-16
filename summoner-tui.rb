@@ -1,16 +1,15 @@
 class SummonerTui < Formula
   desc "TUI Tool for scaffolding batteries-included Haskell projects"
   homepage "https://kowainik.github.io/projects/summoner"
-  url "https://github.com/kowainik/summoner/releases/download/v2.0.0.0/summon-tui-osx"
-  sha256 "0a264c29e142fc1bbc8b9be37aac10f896bb254558b42dc4c87c4535a4013146"
+  url "https://github.com/kowainik/summoner/releases/download/v2.2.0.0/summon-tui-macos-arm64"
+  sha256 "b6a5a9bb8616d953969fd2171ccabc47b0d67958164cf26c95cbd54c8b3d03e2"
 
-  bottle :unneeded
-  depends_on "hub"
+  depends_on "gh"
   conflicts_with "summoner-cli", :because => "because both install 'summon' binaries"
 
   def install
-    bin.install "summon-tui-osx"
-    mv "#{bin}/summon-tui-osx", "#{bin}/summon"
+    odie "This formula currently supports only Apple Silicon (arm64) macOS" unless Hardware::CPU.arm?
+    bin.install "summon-tui-macos-arm64" => "summon"
   end
 
   test do
